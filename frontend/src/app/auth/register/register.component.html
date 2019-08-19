@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="login">
+        <div class="login-triangle"></div>
+        
+        <h2 class="login-header">Create Admin User</h2>
+      
+        <form #dtRegister="ngForm" class="login-container" (ngSubmit)="onRegister(dtRegister)">
+          <p><input name="name" type="text" placeholder="Usuario" ngModel required></p>
+          <p><input name="password" type="password" placeholder="Contraseña" ngModel required></p>
+          <p><input type="submit" value="Registrar"></p>
+        </form>
+      </div>
+</div>

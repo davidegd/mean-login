@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="login">
+        <div class="login-triangle"></div>
+        
+        <h2 class="login-header">Log in</h2>
+      
+        <form #dtLogin="ngForm" class="login-container" (ngSubmit)="onLogin(dtLogin)">
+          <p><input name="name" type="text" placeholder="Usuario" ngModel required></p>
+          <p><input name="password" type="password" placeholder="Contraseña" ngModel required></p>
+          <p><input type="submit" value="Ingresar"></p>
+        </form>
+      </div>
+</div>
